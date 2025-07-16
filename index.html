@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YANGON LOYOLA COMMUNITY COLLEGE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">YLCC</div>
+            <nav class="header-icons">
+                <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+                <a href="about.html" title="About"><i class="fas fa-info-circle"></i></a>
+                <a href="contact.html" title="Contact"><i class="fas fa-phone"></i></a>
+                <a href="courses.html" title="Courses"><i class="fas fa-graduation-cap"></i></a>
+                <a href="register.html" title="Register"><i class="fas fa-user-plus"></i></a>
+            </nav>
+        </div>
+        <h1 class="site-title">YANGON LOYOLA COMMUNITY COLLEGE</h1>
+        <nav class="main-nav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="courses.html">Courses</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+      <!-- Swiper -->
+      
+       <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/mesmerizing-view-lake-surrounded-by-mountains-covered-green-blue-sky.jpg" alt="Slide 1" /></div>
+          <div class="swiper-slide"><img src="img/green-peninsula-with-yachts-boats-near-it-greece.jpg" alt="Slide 2" /></div>
+          <div class="swiper-slide"><img src="img/famous-eiffel-tower-paris-with-gorgeous-colors.jpg" alt="Slide 3" /></div>
+          <div class="swiper-slide"><img src="img/fuji-mountain-kawaguchiko-lake-sunset-autumn-seasons-fuji-mountain-yamanachi-japan.jpg" alt="Slide 4" /></div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com/YourPage" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i> Min Htwe
+            </a>
+            <a href="https://t.me/YourChannel" target="_blank" aria-label="Telegram">
+                <i class="fab fa-telegram-plane"></i> @min2212
+            </a>
+            <a href="https://tiktok.com/@YourAccount" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i> @min2212005
+            </a>
+            <a href="tel:+1234567890" aria-label="Phone">
+                <i class="fas fa-phone"></i> +959972887863
+            </a>
+        </div>
+        <p>&copy;2025 YLCC. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+</body>
+</html>
